@@ -15,8 +15,7 @@ def get_html(url):
         "Referer": "https://weibo.com"
     }
     cookies = {
-    	"cookie": "UOR=www.baidu.com,weibo.com,www.baidu.com; SINAGLOBAL=5223615853375.432.1681302826798; XSRF-TOKEN=SMc3-RoiQBjNZrnkOfwbNdCH; PC_TOKEN=a04e018bb0; login_sid_t=0b851bf16e5e34f7c34a9a956956a994; cross_origin_proto=SSL; _s_tentry=www.weibo.com; Apache=1335937815642.1519.1698740960689; ULV=1698740960692:4:2:1:1335937815642.1519.1698740960689:1696509922500; SUB=_2A25IRMtXDeRhGeFI4lQS8yrIzzqIHXVrM7ufrDV8PUJbmtANLRTVkW9NfNbq5nWIymflPuF8zfez8ddyC2y6Q_kE; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWpemjFmrevVJuxCicAb1kE5NHD95QNSo.ce0eXShBcWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNS0q4Soe0ShBXSntt; ALF=1701332999; SSOLoginState=1698740999; WBPSESS=bLi8V0uUNsreroBTFmbDMEbeMaCCo4lb1e2zyeGUe0_eEMKVJppEeFsgj_xtH0hclRkVU-ngghmkjigRu7WIQJ7y_-UW-viiHhXbS14iUxR2pQZGPpTmmUGu7xNCm3Cm719DgKTfmxhvHxDX5Cre8A=="
-    }
+    	"cookie": '在次数输入自己的cookies' }
     response = requests.get(url, headers=headers, cookies=cookies)
     time.sleep(3)   # 加上3s 的延时防止被反爬
     return response.text
